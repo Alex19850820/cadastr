@@ -35,13 +35,14 @@
 					<h4>Newsletter</h4>
 					<p>Sign up to our newsletter and be the first to know about latest news, special offers, events, and discounts.</p>
 					<!-- RD Mailform-->
-					<form class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
+					<form id="send_phone" class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="bat/rd-mailform.php">
 						<div class="form-wrap">
-							<input class="form-input" id="subscribe-form-2-email" type="email" name="email" data-constraints="@Email @Required">
-							<label class="form-label" for="subscribe-form-2-email">E-mail</label>
+<!--							<label class="form-label" for="subscribe-form-2-email">Phone</label>-->
+							<input id="phone" value="" class="form-input" id="subscribe-form-2-email" type="tel" name="phone" data-constraints="@Email @Required" placeholder="Enter phone">
+							
 						</div>
 						<div class="form-button">
-							<button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit"><span class="icon mdi mdi-email-outline"></span></button>
+							<button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit" id="send__form" data-form="send_phone"><span class="icon mdi mdi-email-outline"></span></button>
 						</div>
 					</form>
 				</div>
@@ -49,9 +50,21 @@
 		</div>
 	</div>
 	<div class="container">
-		<div class="footer-standard-aside"><a class="brand" href="index.html"><img src="<?php bloginfo('template_url')?>/assets/images/logo-light-161x39.png" alt="" width="161" height="39" srcset="<?php bloginfo('template_url')?>/assets/images/logo-light-221x50.png 2x"/></a>
+		<div class="footer-standard-aside"><a class="brand" href="/">
+				<img src="<?php bloginfo('template_url')?>/assets/images/logo-light-161x39.png" alt="" width="161" height="39" srcset="<?php bloginfo('template_url')?>/assets/images/logo-light-221x50.png 2x"/></a>
 			<!-- Rights-->
-			<p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span><span>&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><br class="d-sm-none"/><a href="#">Terms of Use</a><span> and</span><span>&nbsp;</span><a href="#">Privacy Policy</a></p>
+			<p class="rights">
+				<span>&copy;&nbsp;</span>
+				<span class="copyright-year"></span>
+				<span>&nbsp;</span>
+				<span>All Rights Reserved.</span>
+				<span>&nbsp;</span>
+				<br class="d-sm-none"/>
+				<a href="#">Terms of Use</a>
+				<span> and</span>
+				<span>&nbsp;</span>
+				<a href="#">Privacy Policy</a>
+			</p>
 		</div>
 	</div>
 </footer>

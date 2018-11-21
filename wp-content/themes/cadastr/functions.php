@@ -136,7 +136,7 @@ function cadastr_scripts() {
 	
 	wp_enqueue_style( 'cadastr-style-fonts', get_template_directory_uri() . '/assets/css/fonts.css' );
 	
-	wp_enqueue_style( 'cadastr-style-site', get_template_directory_uri() . '/assets/css/style.css' );
+	wp_enqueue_style( 'cadastr-style_site', get_template_directory_uri() . '/assets/css/style.css' );
 	
 	wp_enqueue_script( 'cadastr-js-hivhtml', get_template_directory_uri() . '/assets/js/html5shiv.min.js' );
 	
@@ -150,10 +150,15 @@ function cadastr_scripts() {
 	 * 5) подключение в футере (true = да, false = нет)
 	 *
 	 */
-
+	
+	wp_enqueue_script( 'cadastr-js-ajax_google_phone', 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js', array(), '', true );
+	
+	wp_enqueue_script( 'cadastr-js-maskedinput', get_template_directory_uri() . '/js/jquery.maskedinput.js', array(), '', true );
+	
 	wp_enqueue_script( 'cadastr-js-core', get_template_directory_uri() . '/assets/js/core.min.js', array(), '', true );
 	
 	wp_enqueue_script( 'cadastr-js-script', get_template_directory_uri() . '/assets/js/script.js', array(), '', true );
+
 	wp_enqueue_script( 'cadastr-js_script__form', get_template_directory_uri() . '/js/script__form.js', array(), '', true );
 	
 	wp_enqueue_script( 'cadastr-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
@@ -181,7 +186,7 @@ function cadastr_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'cadastr_scripts' );
 
-//require get_template_directory() . '/includes/custom-functions.php';
+require get_template_directory() . '/includes/custom-functions.php';
 /**
  * Implement the Custom Header feature.
  */

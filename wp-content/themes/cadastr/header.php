@@ -67,6 +67,9 @@
 								?>
 								<?php
 								wp_nav_menu($args);?>
+								<div class="btn-header">
+									<button class="button button-primary button-winona">Узнать цену за минуту</button>
+								</div>
 <!--								<ul class="rd-navbar-nav">-->
 <!--									<li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>-->
 <!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#about-us">About Us</a></li>-->

@@ -10,14 +10,42 @@ $options = [
     //значение - массив конфигураций для опции
 	'h2'     => [
 		'type'  => 'text',
-		'value' => 'Welcome to our agency',
+		'value' => 'Our Team',
 		'label' => __('Заголовок', '{domain}'),
 	],
-	'quest'     => [
-		'type'  => 'text',
-		'value' => 'Остались вопросы?',
-		'label' => __('Заголовок 2', '{domain}'),
+	'employees' => [
+	'type' => 'addable-popup',
+	'label' => __('Добавить сотрудника', '{domain}'),
+	'template' => '{{- name }}',
+	'size' => 'large', // small, medium, large
+	'limit' => 0, // limit the number of popup`s that can be added
+	'add-button-text' => __('добавить', '{domain}'),
+	'sortable' => true,
+	'popup-options' => [
+			'name'     => [
+				'type'  => 'text',
+				'value' => 'Nathan Porter',
+				'label' => __('Имя', '{domain}'),
+			],
+			'position'     => [
+				'type'  => 'text',
+				'value' => 'CEO, Founder',
+				'label' => __('Должность', '{domain}'),
+			],
+			'img'     => [
+				'type'  => 'upload',
+				'value' => '',
+				'label' => __('Добавить фото', '{domain}'),
+				'images_only' => true,
+			],
+		]
 	],
+	'text_modal'     => [
+		'type'  => 'textarea',
+		'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam, atque blanditiis cupiditate deserunt ex fuga id illum incidunt ipsa nam natus nulla possimus quae quisquam, sapiente sit soluta suscipit.',
+		'label' => __('Текст модалки', '{domain}'),
+	],
+	
 	/*'title'     => [
 		'type'  => 'text',
 		'value' => 'наши результаты',
