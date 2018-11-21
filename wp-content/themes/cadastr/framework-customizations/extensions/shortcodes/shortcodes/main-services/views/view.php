@@ -46,38 +46,6 @@
 					<p>Our experienced copywriters will gladly provide you with high-quality texts for your websites or advertisements.</p>
 				</article>
 			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<!-- Box Light-->
-				<article class="box-light">
-					<div class="box-light-icon fl-bigmug-line-share27"></div>
-					<h4 class="box-light-title">SMM</h4>
-					<p>We can develop a simple social media marketing plan designed specifically for your business and your needs.</p>
-				</article>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<!-- Box Light-->
-				<article class="box-light">
-					<div class="box-light-icon fl-bigmug-line-store10"></div>
-					<h4 class="box-light-title">Outdoor Advertising</h4>
-					<p>If you need to create your next out-of-home campaign or lease your space, we can satisfy your advertising needs.​</p>
-				</article>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<!-- Box Light-->
-				<article class="box-light">
-					<div class="box-light-icon box-light-title fl-bigmug-line-square160"></div>
-					<h4 class="box-light-title">Graphic Design</h4>
-					<p>Our graphic design services include printing brochures, banners and logos for your advertising campaign.</p>
-				</article>
-			</div>
-			<div class="col-sm-6 col-md-4 col-lg-3">
-				<!-- Box Light-->
-				<article class="box-light">
-					<div class="box-light-icon fl-bigmug-line-megaphone11"></div>
-					<h4 class="box-light-title">Marketing</h4>
-					<p>This service includes a variety of promotional techniques and methods that can boost your company’s products.</p>
-				</article>
-			</div>
 		</div>
 	</div>
 </section>

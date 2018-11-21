@@ -28,7 +28,7 @@
 		</a>
 	</div>
 </head>
-<body <?php body_class(); ?>>
+<body <?php //body_class(); ?>>
 <div class="page">
 	<!-- Page Header-->
 	<header class="section page-header" id="home">
