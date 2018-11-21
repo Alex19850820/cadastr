@@ -22,11 +22,6 @@
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<title><?php the_title();?></title>
 	<?php wp_head(); ?>
-	<div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;">
-		<a href="http://windows.microsoft.com/en-US/internet-explorer/">
-			<img src="<?php bloginfo('template_url')?>/assets/images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.">
-		</a>
-	</div>
 </head>
 <body <?php //body_class(); ?>>
 <div class="page">
