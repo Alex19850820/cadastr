@@ -59,7 +59,9 @@
 							</div>
 						</div>
 						<div class="col-12">
-							<button class="button button-primary button-winona" type="submit" data-form="send_employees">Send</button>
+							<button class="button button-primary button-winona" type="submit" data-form="send_employees">
+								Send
+							</button>
 						</div>
 					</div>
 				</form>
