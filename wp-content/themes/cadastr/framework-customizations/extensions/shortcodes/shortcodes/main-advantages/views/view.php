@@ -10,7 +10,7 @@
 
 ?>
 <!-- Advantages-->
-<section class="section section-lg text-center">
+<section class="section section-lg text-center" id="advantages">
 	<div class="container">
 		<h3><?=$atts['h2']?></h3>
 		<div class="row row-50 row-xxl-70 offset-top-2">
