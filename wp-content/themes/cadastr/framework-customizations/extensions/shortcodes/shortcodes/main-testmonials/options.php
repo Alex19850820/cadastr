@@ -10,14 +10,41 @@ $options = [
     //значение - массив конфигураций для опции
 	'h2'     => [
 		'type'  => 'text',
-		'value' => 'Welcome to our agency',
+		'value' => 'Testimonials',
 		'label' => __('Заголовок', '{domain}'),
 	],
-	'quest'     => [
-		'type'  => 'text',
-		'value' => 'Остались вопросы?',
-		'label' => __('Заголовок 2', '{domain}'),
-	],
+	'feedback' => [
+	'type' => 'addable-popup',
+	'label' => __('Добавить отзыв', '{domain}'),
+	'template' => '{{- name }}',
+	'size' => 'large', // small, medium, large
+	'limit' => 0, // limit the number of popup`s that can be added
+	'add-button-text' => __('добавить', '{domain}'),
+	'sortable' => true,
+	'popup-options' => [
+			'img'     => [
+				'type'  => 'upload',
+				'value' => '',
+				'label' => __('Добавить картинку отзыва', '{domain}'),
+				'images_only' => true,
+			],
+			'name'     => [
+				'type'  => 'text',
+				'value' => 'Kelly McMillan',
+				'label' => __('Имя', '{domain}'),
+			],
+			'position'     => [
+				'type'  => 'text',
+				'value' => 'CEO at The Olbrand',
+				'label' => __('Должность', '{domain}'),
+			],
+			'desc'     => [
+				'type'  => 'textarea',
+				'value' => 'Thank you for the SMM and online marketing services you delivered. You helped my website to attract new partners and promote my own services to a greater number of customers.',
+				'label' => __('Должность', '{domain}'),
+			],
+		]
+	]
 	/*'title'     => [
 		'type'  => 'text',
 		'value' => 'наши результаты',
