@@ -18,7 +18,7 @@
 			<!-- Pricing Modern-->
 			<article class="pricing-modern wow fadeInLeft">
 				<ul class="pricing-modern-rating">
-					<li class="mdi mdi-star-outline"></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
 				</ul>
 				<h5 class="pricing-modern-title"><a href="#">Small Business</a></h5>
 				<table class="pricing-modern-table">
@@ -40,8 +40,8 @@
 			<!-- Pricing Modern-->
 			<article class="pricing-modern wow fadeInLeft" data-wow-delay=".05s">
 				<ul class="pricing-modern-rating">
-					<li class="mdi mdi-star-outline"></li>
-					<li class="mdi mdi-star-outline"></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
 				</ul>
 				<h5 class="pricing-modern-title"><a href="#">Medium Business</a></h5>
 				<table class="pricing-modern-table">
@@ -63,9 +63,9 @@
 			<!-- Pricing Modern-->
 			<article class="pricing-modern wow fadeInLeft" data-wow-delay=".1s">
 				<ul class="pricing-modern-rating">
-					<li class="mdi mdi-star-outline"></li>
-					<li class="mdi mdi-star-outline"></li>
-					<li class="mdi mdi-star-outline"></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
 				</ul>
 				<h5 class="pricing-modern-title"><a href="#">Big Business</a></h5>
 				<table class="pricing-modern-table">
@@ -87,10 +87,10 @@
 			<!-- Pricing Modern-->
 			<article class="pricing-modern wow fadeInLeft" data-wow-delay=".15s">
 				<ul class="pricing-modern-rating">
-					<li class="mdi mdi-star-outline"></li>
-					<li class="mdi mdi-star-outline"></li>
-					<li class="mdi mdi-star-outline"></li>
-					<li class="mdi mdi-star-outline"></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
+					<li><i class="fa fa-star-o text-normal"></i></li>
 				</ul>
 				<h5 class="pricing-modern-title"><a href="#">Corporation</a></h5>
 				<table class="pricing-modern-table">
