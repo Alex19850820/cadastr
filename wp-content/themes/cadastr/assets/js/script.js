@@ -1871,6 +1871,27 @@
       }
     }
 
+    function previewOpen() {
+        var previews = document.querySelectorAll('.js-preview-open');
+        for (var i = 0; i < previews.length; i++) {
+            var preview = previews[i];
+            preview.onclick = function() {
+              var href = this.getAttribute('href');
+              var img = document.querySelector(href);
+              img.classList.add('img__preview--active');
+            }
+        }
+    }
+    document.onclick = function(e) {
+      if (e.target.classList.contains('img__preview-wrap')
+            && !e.target.classList.contains('img__preview-main')
+            || e.target.classList.contains('img__preview-close')
+            || e.target.closest('.img__preview-close')
+          ) {
+              e.target.closest('.img__preview').classList.remove('img__preview--active');
+          }
+    }
+
     /**
      * Slick carousel
      * @description  Enable Slick carousel plugin
@@ -1879,53 +1900,59 @@
       for (var i = 0; i < plugins.slick.length; i++) {
         var $slickItem = $(plugins.slick[i]);
 
-        $slickItem.slick({
-          slidesToScroll: parseInt($slickItem.attr('data-slide-to-scroll'), 10) || 1,
-          asNavFor: $slickItem.attr('data-for') || false,
-          dots: $slickItem.attr("data-dots") === "true",
-          infinite: isNoviBuilder ? false : $slickItem.attr("data-loop") === "true",
-          focusOnSelect: true,
-          fade: $slickItem.attr("data-fade") === "true",
-          arrows: $slickItem.attr("data-arrows") === "true",
-          swipe: $slickItem.attr("data-swipe") === "true",
-          autoplay: $slickItem.attr("data-autoplay") === "true",
-          vertical: $slickItem.attr("data-vertical") === "true",
-          centerMode: $slickItem.attr("data-center-mode") === "true",
-          centerPadding: $slickItem.attr("data-center-padding") ? $slickItem.attr("data-center-padding") : '0.50',
-          mobileFirst: true,
-          responsive: [
-            {
-              breakpoint: 0,
-              settings: {
-                slidesToShow: parseInt($slickItem.attr('data-items'), 10) || 1
-              }
-            },
-            {
-              breakpoint: 575,
-              settings: {
-                slidesToShow: parseInt($slickItem.attr('data-sm-items'), 10) || 1
-              }
-            },
-            {
-              breakpoint: 767,
-              settings: {
-                slidesToShow: parseInt($slickItem.attr('data-md-items'), 10) || 1
-              }
-            },
-            {
-              breakpoint: 991,
-              settings: {
-                slidesToShow: parseInt($slickItem.attr('data-lg-items'), 10) || 1
-              }
-            },
-            {
-              breakpoint: 1199,
-              settings: {
-                slidesToShow: parseInt($slickItem.attr('data-xl-items'), 10) || 1
-              }
+        $slickItem
+          .on('init', function () {
+            if (this.querySelector('.js-preview-open')) {
+              previewOpen();
             }
-          ]
-        })
+          })
+          .slick({
+            slidesToScroll: parseInt($slickItem.attr('data-slide-to-scroll'), 10) || 1,
+            asNavFor: $slickItem.attr('data-for') || false,
+            dots: $slickItem.attr("data-dots") === "true",
+            infinite: isNoviBuilder ? false : $slickItem.attr("data-loop") === "true",
+            focusOnSelect: true,
+            fade: $slickItem.attr("data-fade") === "true",
+            arrows: $slickItem.attr("data-arrows") === "true",
+            swipe: $slickItem.attr("data-swipe") === "true",
+            autoplay: $slickItem.attr("data-autoplay") === "true",
+            vertical: $slickItem.attr("data-vertical") === "true",
+            centerMode: $slickItem.attr("data-center-mode") === "true",
+            centerPadding: $slickItem.attr("data-center-padding") ? $slickItem.attr("data-center-padding") : '0.50',
+            mobileFirst: true,
+            responsive: [
+              {
+                breakpoint: 0,
+                settings: {
+                  slidesToShow: parseInt($slickItem.attr('data-items'), 10) || 1
+                }
+              },
+              {
+                breakpoint: 575,
+                settings: {
+                  slidesToShow: parseInt($slickItem.attr('data-sm-items'), 10) || 1
+                }
+              },
+              {
+                breakpoint: 767,
+                settings: {
+                  slidesToShow: parseInt($slickItem.attr('data-md-items'), 10) || 1
+                }
+              },
+              {
+                breakpoint: 991,
+                settings: {
+                  slidesToShow: parseInt($slickItem.attr('data-lg-items'), 10) || 1
+                }
+              },
+              {
+                breakpoint: 1199,
+                settings: {
+                  slidesToShow: parseInt($slickItem.attr('data-xl-items'), 10) || 1
+                }
+              }
+            ]
+          })
           .on('afterChange', function (event, slick, currentSlide, nextSlide) {
             var $this = $(this),
               childCarousel = $this.attr('data-child');

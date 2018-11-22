@@ -15,9 +15,11 @@
 		<h3><?=$atts['h2']?></h3>
 		<div class="slick-widget-testimonials wow fadeIn">
 			<div class="slick-slider carousel-child" id="child-carousel" data-for=".carousel-parent" data-arrows="true" data-loop="true" data-dots="false" data-swipe="true" data-items="1" data-sm-items="3" data-md-items="5" data-lg-items="5" data-xl-items="5" data-center-mode="true" data-slide-to-scroll="1">
-				<?php foreach ($atts['feedback'] as $feedback):?>
+				<?php $n=0; foreach ($atts['feedback'] as $feedback): $n++;?>
 					<div class="item wow-outer">
-						<img class="wow slideInLeft" src="<?=$feedback['img']['url']?>" alt="" width="96" height="96"/>
+						<a class="js-preview-open" href="#slick-img<?=$n?>">
+							<img class="wow slideInLeft" src="<?=$feedback['img']['url']?>" alt="" width="96" height="96"/>
+						</a>
 					</div>
 				<?php endforeach;?>
 			</div>
@@ -117,5 +119,19 @@
 <!--				</div>-->
 			</div>
 		</div>
+	</div>
+	<div>
+		<?php $z=0; foreach ($atts['feedback'] as $item): $z++;?>
+			<div class="img__preview" id="slick-img<?=$z?>">
+				<div class="img__preview-wrap">
+					<div class="img__preview-main-wrap">
+						<button class="img__preview-close">
+							<i class="fa fa-close text-normal"></i>
+						</button>
+						<img class="img__preview-main" src="<?=$item['img']['url']?>" alt="">
+					</div>
+				</div>
+			</div>
+		<?php endforeach;?>
 	</div>
 </section>
