@@ -36,8 +36,8 @@
 					<p>Sign up to our newsletter and be the first to know about latest news, special offers, events, and discounts.</p>
 					<!-- RD Mailform-->
 					<form id="send_phone" class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="<?php bloginfo('template_url')?>/includes/bat/rd-mailform.php">
-						<div class="form-wrap"
-<!--							<label class="form-label" for="subscribe-form-2-email">Phone</label>-->
+						<div class="form-wrap">
+<!--<label class="form-label" for="subscribe-form-2-email">Phone</label>-->
 							<input id="phone" value="" class="form-input" id="subscribe-form-2-email" type="tel" name="phone" data-constraints="@Email @Required" placeholder="Enter phone">
 							
 						</div>
