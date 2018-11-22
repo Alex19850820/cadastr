@@ -10,14 +10,55 @@ $options = [
     //значение - массив конфигураций для опции
 	'h2'     => [
 		'type'  => 'text',
-		'value' => 'Welcome to our agency',
+		'value' => 'Pricing',
 		'label' => __('Заголовок', '{domain}'),
 	],
-	'quest'     => [
-		'type'  => 'text',
-		'value' => 'Остались вопросы?',
+	'desc'     => [
+		'type'  => 'textarea',
+		'value' => 'We understand the needs of modern companies, and that’s why we made our pricing policy affordable for every business owner. You can choose a suitable pricing plan below.',
 		'label' => __('Заголовок 2', '{domain}'),
 	],
+	'price' => [
+		'type' => 'addable-popup',
+		'label' => __('Добавить информацию', '{domain}'),
+		'template' => '{{- h2 }}',
+		'size' => 'large', // small, medium, large
+		'limit' => 0, // limit the number of popup`s that can be added
+		'add-button-text' => __('добавить', '{domain}'),
+		'sortable' => true,
+		'popup-options' => [
+			'stars_count'     => [
+				'type'  => 'text',
+				'value' => '1',
+				'label' => __('Количество звезд', '{domain}'),
+			],
+			'h2'     => [
+				'type'  => 'text',
+				'value' => 'Small Business',
+				'label' => __('Название', '{domain}'),
+			],
+			'employees'     => [
+				'type'  => 'text',
+				'value' => '2',
+				'label' => __('Количество сотрудников', '{domain}'),
+			],
+			'month'     => [
+				'type'  => 'text',
+				'value' => '1',
+				'label' => __('Количество месяцев', '{domain}'),
+			],
+			'minutes'     => [
+				'type'  => 'text',
+				'value' => '1000',
+				'label' => __('Количество минут', '{domain}'),
+			],
+			'price'     => [
+				'type'  => 'text',
+				'value' => '789.00',
+				'label' => __('Цена', '{domain}'),
+			],
+		]
+	]
 	/*'title'     => [
 		'type'  => 'text',
 		'value' => 'наши результаты',
