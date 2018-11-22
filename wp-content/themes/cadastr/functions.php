@@ -150,15 +150,15 @@ function cadastr_scripts() {
 	 * 5) подключение в футере (true = да, false = нет)
 	 *
 	 */
-	
 	wp_enqueue_script( 'cadastr-js-ajax_google_phone', 'http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js', array(), '', true );
-	
-	wp_enqueue_script( 'cadastr-js-maskedinput', get_template_directory_uri() . '/js/jquery.maskedinput.js', array(), '', true );
 	
 	wp_enqueue_script( 'cadastr-js-core', get_template_directory_uri() . '/assets/js/core.min.js', array(), '', true );
 	
 	wp_enqueue_script( 'cadastr-js-script', get_template_directory_uri() . '/assets/js/script.js', array(), '', true );
-
+	
+	
+	wp_enqueue_script( 'cadastr-js-maskedinput', get_template_directory_uri() . '/js/jquery.maskedinput.js', array(), '', true );
+	
 	wp_enqueue_script( 'cadastr-js_script__form', get_template_directory_uri() . '/js/script__form.js', array(), '', true );
 	
 	wp_enqueue_script( 'cadastr-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
