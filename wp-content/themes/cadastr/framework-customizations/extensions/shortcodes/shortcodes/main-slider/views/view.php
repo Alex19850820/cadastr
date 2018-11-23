@@ -11,7 +11,7 @@
 ?>
 <!-- Slider-->
 <section class="section section-overlap bg-gray-100">
-	<div class="section-overlap-image" style="background-image: url(<?php bloginfo('template_url')?>/assets/images/screens-1-1046x720.jpg)"></div>
+	<div class="section-overlap-image" style="background-image: url(<?=$atts['img']['url']?>)"></div>
 	<div class="section-overlap-content">
 		<div class="container">
 			<div class="row">

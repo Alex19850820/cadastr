@@ -13,6 +13,32 @@ $options = [
 		'value' => 'Наши преимущества',
 		'label' => __('Заголовок', '{domain}'),
 	],
+	'advantages' => [
+	'type' => 'addable-popup',
+	'label' => __('Добавить преимущество', '{domain}'),
+	'template' => '{{- h4 }}',
+	'size' => 'large', // small, medium, large
+	'limit' => 0, // limit the number of popup`s that can be added
+	'add-button-text' => __('добавить', '{domain}'),
+	'sortable' => true,
+	'popup-options' => [
+			'h4'     => [
+				'type'  => 'text',
+				'value' => 'Первоначальный анализ бесплатно!',
+				'label' => __('Заголовок', '{domain}'),
+			],
+	        'p'     => [
+				'type'  => 'text',
+				'value' => 'Демократичные цены, понятное их формирование',
+				'label' => __('Текст', '{domain}'),
+			],
+		]
+	],
+	'button'     => [
+	'type'  => 'text',
+	'value' => 'Заказать эксперес аудит',
+	'label' => __('Текст кнопки', '{domain}'),
+	],
 	/*'title'     => [
 		'type'  => 'text',
 		'value' => 'наши результаты',
