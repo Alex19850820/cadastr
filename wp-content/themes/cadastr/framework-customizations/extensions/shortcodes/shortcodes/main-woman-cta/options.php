@@ -8,15 +8,31 @@
 $options = [
 //    //ключ - slug опции, к которому будем обращаться во view
     //значение - массив конфигураций для опции
-	'h2'     => [
+	'img'     => [
+		'type'  => 'upload',
+		'value' => '',
+		'label' => __('Добавить картинку', '{domain}'),
+		'images_only' => true,
+	],
+	'h4'     => [
 		'type'  => 'text',
-		'value' => 'Welcome to our agency',
+		'value' => 'Take the First Step to the',
 		'label' => __('Заголовок', '{domain}'),
 	],
-	'quest'     => [
+	'h3'     => [
 		'type'  => 'text',
-		'value' => 'Остались вопросы?',
-		'label' => __('Заголовок 2', '{domain}'),
+		'value' => 'Success of Your Company',
+		'label' => __('Заголовок2', '{domain}'),
+	],
+	'desc'     => [
+		'type'  => 'text',
+		'value' => 'We can make your company the leader of the market by providing high quality business management solutions. Schedule an appointment to find out more.',
+		'label' => __('Описание', '{domain}'),
+	],
+	'text_button'     => [
+		'type'  => 'text',
+		'value' => 'Make an Appointment',
+		'label' => __('Описание', '{domain}'),
 	],
 	/*'title'     => [
 		'type'  => 'text',
