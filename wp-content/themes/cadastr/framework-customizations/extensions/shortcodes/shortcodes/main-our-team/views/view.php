@@ -35,7 +35,7 @@
 	</div>
 </section>
 <!-- Our Team-Modal-->
-<?php $n=0; foreach ($atts['employees'] as $employee): $n++;?>
+<?php $n=0; foreach ($atts['employees'] as $employee): $n++; ?>
 	<div class="modal fade" id="more<?=$n?>">
 		<div class="modal-dialog" role="document">
 			<div class="modal-content">
