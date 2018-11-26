@@ -8,16 +8,33 @@
 $options = [
 //    //ключ - slug опции, к которому будем обращаться во view
     //значение - массив конфигураций для опции
-	'h2'     => [
-		'type'  => 'text',
-		'value' => 'Welcome to our agency',
-		'label' => __('Заголовок', '{domain}'),
-	],
-	'quest'     => [
-		'type'  => 'text',
-		'value' => 'Остались вопросы?',
-		'label' => __('Заголовок 2', '{domain}'),
-	],
+	'features' => [
+	'type' => 'addable-popup',
+	'label' => __('Добавить достижения', '{domain}'),
+	'template' => '{{- h5 }}',
+	'size' => 'large', // small, medium, large
+	'limit' => 0, // limit the number of popup`s that can be added
+	'add-button-text' => __('добавить', '{domain}'),
+	'sortable' => true,
+	'popup-options' => [
+			'ico'     => [
+				'type'  => 'upload',
+				'value' => '',
+				'label' => __('Добавить картинку достижения', '{domain}'),
+				'images_only' => true,
+			],
+			'count'     => [
+				'type'  => 'text',
+				'value' => '12',
+				'label' => __('Количество', '{domain}'),
+			],
+			'h5'     => [
+				'type'  => 'text',
+				'value' => 'International Awards',
+				'label' => __('Количество', '{domain}'),
+			],
+		],
+	]
 	/*'title'     => [
 		'type'  => 'text',
 		'value' => 'наши результаты',
