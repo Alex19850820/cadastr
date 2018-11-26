@@ -18,7 +18,7 @@
 				<div class="col-sm-6 col-md-4 col-lg-3">
 					<!-- Box Light-->
 					<article class="box-light text-center">
-						<div class="box-light-icon fl-bigmug-line-flag53"></div>
+						<div class="box-light-icon services__img"><img src="<?=$advantage['ico']['url']?>"></div>
 						<h4 class="box-light-title"><?=$advantage['h4']?></h4>
 						<p><?=$advantage['p']?></p>
 						<?php if($i == 1):?>

@@ -22,6 +22,12 @@ $options = [
 	'add-button-text' => __('добавить', '{domain}'),
 	'sortable' => true,
 	'popup-options' => [
+			'ico'     => [
+				'type'  => 'upload',
+				'value' => '',
+				'label' => __('Добавить картинку преимущества', '{domain}'),
+				'images_only' => true,
+			],
 			'h4'     => [
 				'type'  => 'text',
 				'value' => 'Первоначальный анализ бесплатно!',

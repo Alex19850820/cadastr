@@ -8,15 +8,47 @@
 $options = [
 //    //ключ - slug опции, к которому будем обращаться во view
     //значение - массив конфигураций для опции
-	'h2'     => [
+	'h3'     => [
 		'type'  => 'text',
-		'value' => 'Welcome to our agency',
+		'value' => 'Latest Blog Posts',
 		'label' => __('Заголовок', '{domain}'),
 	],
-	'quest'     => [
-		'type'  => 'text',
-		'value' => 'Остались вопросы?',
-		'label' => __('Заголовок 2', '{domain}'),
+	'slider' => [
+		'type' => 'addable-popup',
+		'label' => __('Добавить слайд', '{domain}'),
+		'template' => '{{- name }}',
+		'size' => 'large', // small, medium, large
+		'limit' => 0, // limit the number of popup`s that can be added
+		'add-button-text' => __('добавить', '{domain}'),
+		'sortable' => true,
+		'popup-options' => [
+			'img'     => [
+				'type'  => 'upload',
+				'value' => '',
+				'label' => __('Добавить картинку', '{domain}'),
+				'images_only' => true,
+			],
+			'name'     => [
+				'type'  => 'text',
+				'value' => 'News',
+				'label' => __('Название', '{domain}'),
+			],
+			'time'     => [
+				'type'  => 'text',
+				'value' =>  date("F j, Y, g:i a"),
+				'label' => __('Дата', '{domain}'),
+			],
+			'h4'     => [
+				'type'  => 'text',
+				'value' => 'How to Create the Best Online Advertisement',
+				'label' => __('', '{domain}'),
+			],
+		]
+	],
+	'text_button'     => [
+	'type'  => 'text',
+	'value' => 'View all Blog posts',
+	'label' => __('Заголовок', '{domain}'),
 	],
 	/*'title'     => [
 		'type'  => 'text',

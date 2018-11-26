@@ -12,46 +12,30 @@
 <!-- Latest Blog Posts-->
 <section class="section section-lg bg-gray-100 text-center">
 	<div class="container">
-		<h3 class="wow-outer"><span class="wow slideInDown">Latest Blog Posts</span></h3>
+		<h3 class="wow-outer"><span class="wow slideInDown"><?=$atts['h3']?></span></h3>
 		<div class="row row-50">
-			<div class="col-sm-6 col-lg-4 wow-outer">
-				<!-- Post Classic-->
-				<article class="post-classic wow slideInLeft"><a class="post-classic-media" href="#"><img src="<?php bloginfo('template_url')?>/assets/images/sidebar-blog-1-370x264.jpg" alt="" width="370" height="264"/></a>
-					<ul class="post-classic-meta">
-						<li><a class="button-winona" href="#">News</a></li>
-						<li>
-							<time datetime="2018">Apr 21, 2018 at 12:05 pm</time>
-						</li>
-					</ul>
-					<h4 class="post-classic-title"><a href="#">How to Create the Best Online Advertisement</a></h4>
-				</article>
-			</div>
-			<div class="col-sm-6 col-lg-4 wow-outer">
-				<!-- Post Classic-->
-				<article class="post-classic wow slideInLeft" data-wow-delay=".05s"><a class="post-classic-media" href="#"><img src="<?php bloginfo('template_url')?>/assets/images/sidebar-blog-2-370x264.jpg" alt="" width="370" height="264"/></a>
-					<ul class="post-classic-meta">
-						<li><a class="button-winona" href="#">Advertising</a></li>
-						<li>
-							<time datetime="2018">Apr 21, 2018 at 12:05 pm</time>
-						</li>
-					</ul>
-					<h4 class="post-classic-title"><a href="#">Creating and Managing an Advertising Campaign</a></h4>
-				</article>
-			</div>
-			<div class="col-sm-6 col-lg-4 wow-outer">
-				<!-- Post Classic-->
-				<article class="post-classic wow slideInLeft" data-wow-delay=".1s"><a class="post-classic-media" href="#"><img src="<?php bloginfo('template_url')?>/assets/images/sidebar-blog-3-370x264.jpg" alt="" width="370" height="264"/></a>
-					<ul class="post-classic-meta">
-						<li><a class="button-winona" href="#">Tips</a></li>
-						<li>
-							<time datetime="2018">Apr 21, 2018 at 12:05 pm</time>
-						</li>
-					</ul>
-					<h4 class="post-classic-title"><a href="#">How to Choose an Advertising Agency in the USA</a></h4>
-				</article>
-			</div>
+			<?php foreach ($atts['slider'] as $slide): ?>
+				<div class="col-sm-6 col-lg-4 wow-outer">
+					<!-- Post Classic-->
+					<article class="post-classic wow slideInLeft">
+						<a class="post-classic-media" href="#">
+							<img src="<?=$slide['img']['url']?>" alt="" width="370" height="264"/>
+						</a>
+						<ul class="post-classic-meta">
+							<li><a class="button-winona" href="#"><?=$slide['name']?></a></li>
+							<li>
+								<time datetime="2018"><?=$slide['time']?></time>
+							</li>
+						</ul>
+						<h4 class="post-classic-title">
+							<a href="#"><?=$slide['h4']?></a>
+						</h4>
+					</article>
+				</div>
+			<?php endforeach;?>
 		</div>
-		<div class="wow-outer button-outer"><a class="button button-lg button-primary button-winona wow slideInUp" href="#">View all Blog posts</a></div>
+		<div class="wow-outer button-outer">
+			<a class="button button-lg button-primary button-winona wow slideInUp" href="#"><?=$atts['text_button']?></a></div>
 	</div>
 </section>
 <section class="section">

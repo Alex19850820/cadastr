@@ -38,12 +38,17 @@ $options = [
 				'label' => __('Добавить фото', '{domain}'),
 				'images_only' => true,
 			],
+			'h6'     => [
+				'type'  => 'text',
+				'value' => 'Title',
+				'label' => __('Заголовок модалки', '{domain}'),
+			],
+			'text_modal'     => [
+				'type'  => 'textarea',
+				'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam, atque blanditiis cupiditate deserunt ex fuga id illum incidunt ipsa nam natus nulla possimus quae quisquam, sapiente sit soluta suscipit.',
+				'label' => __('Текст модалки', '{domain}'),
+			],
 		]
-	],
-	'text_modal'     => [
-		'type'  => 'textarea',
-		'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam, atque blanditiis cupiditate deserunt ex fuga id illum incidunt ipsa nam natus nulla possimus quae quisquam, sapiente sit soluta suscipit.',
-		'label' => __('Текст модалки', '{domain}'),
 	],
 	
 	/*'title'     => [
