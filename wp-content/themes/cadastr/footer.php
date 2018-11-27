@@ -8,7 +8,7 @@
  *
  * @package cadastr
  */
-
+$footer = fw_get_db_customizer_option();
 ?>
 <!-- Page Footer-->
 <footer class="section footer-standard bg-gray-700" id="contacts">
@@ -17,23 +17,23 @@
 			<div class="row row-50">
 				<div class="col-lg-4">
 					<div class="inset-right-1">
-						<h4>About Us</h4>
-						<p>We specialize in small and mid-sized business management and planning, understanding the difficulties that can occur when operating your own company. We combine many years of experience and down-to-earth personal service.</p>
+						<h4><?=$footer['f_h4']?></h4>
+						<p><?=$footer['f_desc']?></p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-5 col-lg-4">
 					<div class="box-1">
-						<h4>Contact Information</h4>
+						<h4><?=$footer['f_h4_2']?></h4>
 						<ul class="list-sm">
-							<li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#">2130 Fulton Street <br> San Diego, CA 94117-1080 USA</a></li>
-							<li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span><a class="link-default" href="tel:#">1-800-1234-678</a></li>
-							<li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#">info@demolink.org</a></li>
+							<li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#"><?=$footer['f_address']?></a></li>
+							<li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span><a class="link-default" href="tel:#"><?=$footer['f_phone']?></a></li>
+							<li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#"><?=$footer['f_mail']?></a></li>
 						</ul>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-7 col-lg-4">
-					<h4>Newsletter</h4>
-					<p>Sign up to our newsletter and be the first to know about latest news, special offers, events, and discounts.</p>
+					<h4><?=$footer['f_h4_3']?></h4>
+					<p><?=$footer['f_desc_2']?></p>
 					<!-- RD Mailform-->
 					<form id="send_phone" class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="<?php bloginfo('template_url')?>/includes/bat/rd-mailform.php">
 						<div class="form-wrap">
@@ -57,13 +57,13 @@
 				<span>&copy;&nbsp;</span>
 				<span class="copyright-year"></span>
 				<span>&nbsp;</span>
-				<span>All Rights Reserved.</span>
+				<span><?=$footer['f_all_rights']?></span>
 				<span>&nbsp;</span>
 				<br class="d-sm-none"/>
-				<a href="#">Terms of Use</a>
-				<span> and</span>
+				<a href="#"><?=$footer['f_terms']?></a>
+				<span> и</span>
 				<span>&nbsp;</span>
-				<a href="#">Privacy Policy</a>
+				<a href="#"><?=$footer['f_privacy']?></a>
 			</p>
 		</div>
 	</div>

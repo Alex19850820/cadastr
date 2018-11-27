@@ -12,12 +12,12 @@ $options = [
 			'phone' => [
 				'type'  => 'text',
 				'label' => __( 'Телефон', '{domain}' ),
-				'value' => '+7 918 678 44 44',
+				'value' => '',
 			],
 			'email' => [
 				'type'  => 'text',
 				'label' => __( 'E-mail', '{domain}' ),
-				'value' => 'horizon@gmail.ru',
+				'value' => '',
 			],
 			'menu_main' => [
 				'type' => 'addable-popup',
@@ -70,20 +70,60 @@ $options = [
 	'footer' => [
 		'title'   => __( 'Футер', '{domain}' ),
 		'options' => [
-			'more' => [
+			'f_h4' => [
+				'type'  => 'text',
+				'label' => __( 'Заголовок', '{domain}' ),
+				'value' => 'About Us',
+			],
+			'f_desc' => [
 				'type'  => 'text',
 				'label' => __( 'Текст', '{domain}' ),
-				'value' => '',
+				'value' => 'We specialize in small and mid-sized business management and planning, understanding the difficulties that can occur when operating your own company. We combine many years of experience and down-to-earth personal service.',
 			],
-			'order' => [
+			'f_h4_2' => [
 				'type'  => 'text',
-				'label' => __( 'Текст', '{domain}' ),
-				'value' => '',
+				'label' => __( 'Заголовок2', '{domain}' ),
+				'value' => 'Contact Information',
 			],
-			'horder' => [
+			'f_address' => [
 				'type'  => 'text',
-				'label' => __( 'Ссылка', '{domain}' ),
-				'value' => '#',
+				'label' => __( 'Адрес', '{domain}' ),
+				'value' => '2130 Fulton Street <br> San Diego, CA 94117-1080 USA',
+			],
+			'f_phone' => [
+				'type'  => 'text',
+				'label' => __( 'Телефон', '{domain}' ),
+				'value' => '1-800-1234-678',
+			],
+			'f_mail' => [
+				'type'  => 'text',
+				'label' => __( 'Телефон', '{domain}' ),
+				'value' => 'info@demolink.org',
+			],
+			'f_h4_3' => [
+				'type'  => 'text',
+				'label' => __( 'Заголовок3', '{domain}' ),
+				'value' => 'Newsletter',
+			],
+			'f_desc_2' => [
+				'type'  => 'textarea',
+				'label' => __( 'Текст2', '{domain}' ),
+				'value' => 'Sign up to our newsletter and be the first to know about latest news, special offers, events, and discounts.',
+			],
+			'f_all_rights' => [
+				'type'  => 'text',
+				'label' => __( 'Права', '{domain}' ),
+				'value' => 'All Rights Reserved.',
+			],
+			'f_terms' => [
+				'type'  => 'text',
+				'label' => __( 'Terms', '{domain}' ),
+				'value' => 'Terms of Use',
+			],
+			'f_privacy' => [
+				'type'  => 'text',
+				'label' => __( 'Privacy', '{domain}' ),
+				'value' => 'Privacy Policy',
 			],
 			'new_build' => [
 				'type' => 'addable-popup',
