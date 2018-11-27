@@ -21,6 +21,10 @@
 						<div class="box-light-icon services__img"><img src="<?=$advantage['ico']['url']?>"></div>
 						<h4 class="box-light-title"><?=$advantage['h4']?></h4>
 						<p><?=$advantage['p']?></p>
+						<div class="header__price">
+							<span class="header__price-old"><?=$advantage['old_price']?></span>
+							<span class="header__price-new"><?=$advantage['new_price']?>₽</span>
+						</div>
 						<?php if($i == 1):?>
 							<button class="button button-primary button-winona button-small">
 								<?=$atts['button']?>

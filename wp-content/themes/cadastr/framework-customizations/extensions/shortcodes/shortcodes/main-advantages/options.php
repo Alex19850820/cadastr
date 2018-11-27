@@ -38,6 +38,16 @@ $options = [
 				'value' => 'Демократичные цены, понятное их формирование',
 				'label' => __('Текст', '{domain}'),
 			],
+			'old_price'     => [
+				'type'  => 'text',
+				'value' => '5999',
+				'label' => __('Старая цена', '{domain}'),
+			],
+			'new_price'     => [
+				'type'  => 'text',
+				'value' => '0',
+				'label' => __('Новая цена', '{domain}'),
+			],
 		]
 	],
 	'button'     => [
