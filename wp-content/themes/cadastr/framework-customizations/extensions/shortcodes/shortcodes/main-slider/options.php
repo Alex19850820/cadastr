@@ -37,6 +37,16 @@ $options = [
 ',
 		'label' => __('Текст', '{domain}'),
 	],
+	'old_price'     => [
+		'type'  => 'text',
+		'value' => '5999',
+		'label' => __('Старая цена', '{domain}'),
+	],
+	'new_price'     => [
+		'type'  => 'text',
+		'value' => '0',
+		'label' => __('Новая цена', '{domain}'),
+	],
 	'text_button'     => [
 		'type'  => 'text',
 		'value' => 'Получить консультацию',

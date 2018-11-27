@@ -38,6 +38,10 @@
 					<div class="wow-outer">
 						<p class="wow slideInUp" data-wow-delay=".2s"><?=$atts['desc']?></p>
 					</div>
+					<div class="header__price">
+						<span class="header__price-old"><?=$atts['old_price']?></span>
+						<span class="header__price-new"><?=$atts['new_price']?>₽</span>
+					</div>
 					<div class="wow-outer button-outer">
 						<a class="button button-lg button-primary button-winona wow slideInUp" href="#make-appointment" data-toggle="modal">
 							<?=$atts['text_button']?>
