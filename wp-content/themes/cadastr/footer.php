@@ -51,7 +51,7 @@
 	</div>
 	<div class="container">
 		<div class="footer-standard-aside"><a class="brand" href="/">
-				<img src="<?php bloginfo('template_url')?>/assets/images/logo-light-161x39.png" alt="" width="161" height="39" srcset="<?php bloginfo('template_url')?>/assets/images/logo-light-221x50.png 2x"/></a>
+				<img src="<?php bloginfo('template_url')?>/assets/images/Logofuter.png" alt="" width="161" height="39" srcset="<?php bloginfo('template_url')?>/assets/images/logo-light-221x50.png 2x"/></a>
 			<!-- Rights-->
 			<p class="rights">
 				<span>&copy;&nbsp;</span>
