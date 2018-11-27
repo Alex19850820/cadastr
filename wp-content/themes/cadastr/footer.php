@@ -156,7 +156,7 @@
 </div>
 </div>
 <div class="preloader">
-	<div class="preloader-logo"><img src="<?php bloginfo('template_url')?>/assets/images/logo-default-161x39.png" alt="" width="161" height="39" srcset="<?php bloginfo('template_url')?>/assets/images/logo-default-221x50.png 2x"/>
+	<div class="preloader-logo"><img src="<?php bloginfo('template_url')?>/assets/images/Logo1.png" alt="" width="161" height="39" srcset="<?php bloginfo('template_url')?>/assets/images/Logo1.png 2x"/>
 	</div>
 	<div class="preloader-body">
 		<div id="loadingProgressG">
