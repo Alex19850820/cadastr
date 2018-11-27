@@ -17,7 +17,7 @@
 		</h3>
 		<div class="row row-50 row-xxl-70 offset-top-2">
 			<?php foreach ($atts['box'] as $box):?>
-				<div class="col-sm-6 col-md-4 col-lg-3">
+				<div class="col-sm-6 col-md-4 ">
 					<!-- Box Light-->
 					<article class="box-light">
 						<div class="box-light-icon services__img">

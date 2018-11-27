@@ -19,6 +19,7 @@
 	<meta name="viewport" content="width=device-width height=device-height initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" href="<?php bloginfo('template_url')?>/assets/images/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500|Roboto:300,700,900&amp;subset=cyrillic" rel="stylesheet">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<title><?php the_title();?></title>
 	<?php wp_head(); ?>
