@@ -37,9 +37,9 @@ $footer = fw_get_db_customizer_option();
 					<!-- RD Mailform-->
 					<form id="send_phone" class="rd-form rd-mailform form-inline" data-form-output="form-output-global" data-form-type="subscribe" method="post" action="<?php bloginfo('template_url')?>/includes/bat/rd-mailform.php">
 						<div class="form-wrap">
-<!--<label class="form-label" for="subscribe-form-2-email">Phone</label>-->
+							<!--<label class="form-label" for="subscribe-form-2-email">Phone</label>-->
 							<input id="phone" value="" class="form-input" id="subscribe-form-2-email" type="tel" name="phone" data-constraints="@Email @Required" placeholder="Enter phone">
-							
+
 						</div>
 						<div class="form-button">
 							<button class="button button-primary button-icon button-icon-only button-winona" type="submit" aria-label="submit" id="send__form" data-form="send_phone"><span class="icon mdi mdi-email-outline"></span></button>
@@ -121,30 +121,30 @@ $footer = fw_get_db_customizer_option();
 			<div class="modal-body">
 				<form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="<?php bloginfo('template_url')?>/includes/bat/rd-mailform.php">
 					<div class="row row-10">
-<!--						<div class="col-md-12">-->
-<!--							<div class="form-wrap">-->
-<!--								<label class="form-label-outside" for="contact-name1">Name</label>-->
-<!--								<input class="form-input" id="contact-name1" type="text" name="name" data-constraints="@Required">-->
-<!--							</div>-->
-<!--						</div>-->
+						<!--						<div class="col-md-12">-->
+						<!--							<div class="form-wrap">-->
+						<!--								<label class="form-label-outside" for="contact-name1">Name</label>-->
+						<!--								<input class="form-input" id="contact-name1" type="text" name="name" data-constraints="@Required">-->
+						<!--							</div>-->
+						<!--						</div>-->
 						<div class="col-md-12">
 							<div class="form-wrap">
 								<label class="form-label-outside" for="contact-phone1">Телефон</label>
 								<input class="form-input" id="contact-phone1" type="text" name="phone" data-constraints="@PhoneNumber">
 							</div>
 						</div>
-<!--						<div class="col-md-12">-->
-<!--							<div class="form-wrap">-->
-<!--								<label class="form-label-outside" for="contact-2-email">E-mail</label>-->
-<!--								<input class="form-input" id="contact-2-email" type="email" name="email" data-constraints="@Email @Required">-->
-<!--							</div>-->
-<!--						</div>-->
-<!--						<div class="col-md-12">-->
-<!--							<div class="form-wrap">-->
-<!--								<label class="form-label-outside" for="contact-date">Date</label>-->
-<!--								<input class="form-input" id="contact-date" type="text" name="date" data-constraints="@Required" data-time-picker="date">-->
-<!--							</div>-->
-<!--						</div>-->
+						<!--						<div class="col-md-12">-->
+						<!--							<div class="form-wrap">-->
+						<!--								<label class="form-label-outside" for="contact-2-email">E-mail</label>-->
+						<!--								<input class="form-input" id="contact-2-email" type="email" name="email" data-constraints="@Email @Required">-->
+						<!--							</div>-->
+						<!--						</div>-->
+						<!--						<div class="col-md-12">-->
+						<!--							<div class="form-wrap">-->
+						<!--								<label class="form-label-outside" for="contact-date">Date</label>-->
+						<!--								<input class="form-input" id="contact-date" type="text" name="date" data-constraints="@Required" data-time-picker="date">-->
+						<!--							</div>-->
+						<!--						</div>-->
 						<div class="col-12">
 							<button class="button button-primary button-winona" type="submit">Отправить</button>
 						</div>

@@ -47,39 +47,39 @@
 						<div class="rd-navbar-main-element">
 							<div class="rd-navbar-nav-wrap" id="rd-navbar-nav-wrap-1">
 								<?php
-									$args = [
-										'theme_location'  => '',
-										'menu'            => 'main-menu',
-										'container'       => false,
-										'container_class' => '',
-										'container_id'    => '',
-										'menu_class'      => '',
-										'menu_id'         => false,
-										'echo'            => true,
-										'fallback_cb'     => '__return_empty_string',
-										'before'          => false,
-										'after'           => false,
-										'link_before'     => false,
-										'link_after'      => false,
-										'items_wrap'      => '<ul class="rd-navbar-nav">%3$s</ul>',
-										'depth'           => 0,
-										'walker'          => false,
-									];
+								$args = [
+									'theme_location'  => '',
+									'menu'            => 'main-menu',
+									'container'       => false,
+									'container_class' => '',
+									'container_id'    => '',
+									'menu_class'      => '',
+									'menu_id'         => false,
+									'echo'            => true,
+									'fallback_cb'     => '__return_empty_string',
+									'before'          => false,
+									'after'           => false,
+									'link_before'     => false,
+									'link_after'      => false,
+									'items_wrap'      => '<ul class="rd-navbar-nav">%3$s</ul>',
+									'depth'           => 0,
+									'walker'          => false,
+								];
 								?>
 								<?php
 								wp_nav_menu($args);?>
-<!--								<div class="btn-header">-->
-<!--									<button class="button button-primary button-winona button-small">Узнать цену за минуту</button>-->
-<!--								</div>-->
-<!--								<ul class="rd-navbar-nav">-->
-<!--									<li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>-->
-<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#about-us">About Us</a></li>-->
-<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#services">Services</a></li>-->
-<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#our-team">Our Team</a></li>-->
-<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#career">Career</a></li>-->
-<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#projects">Our Projects</a></li>-->
-<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#testimonials">Testimonials</a></li>-->
-<!--								</ul>-->
+								<!--								<div class="btn-header">-->
+								<!--									<button class="button button-primary button-winona button-small">Узнать цену за минуту</button>-->
+								<!--								</div>-->
+								<!--								<ul class="rd-navbar-nav">-->
+								<!--									<li class="rd-nav-item active"><a class="rd-nav-link" href="#home">Home</a></li>-->
+								<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#about-us">About Us</a></li>-->
+								<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#services">Services</a></li>-->
+								<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#our-team">Our Team</a></li>-->
+								<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#career">Career</a></li>-->
+								<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#projects">Our Projects</a></li>-->
+								<!--									<li class="rd-nav-item"><a class="rd-nav-link" href="#testimonials">Testimonials</a></li>-->
+								<!--								</ul>-->
 							</div>
 						</div>
 					</div>
