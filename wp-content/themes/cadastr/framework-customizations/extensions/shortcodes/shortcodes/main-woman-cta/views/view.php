@@ -13,7 +13,7 @@
 <section class="section section-xl bg-gray-700 bg-image bg-image-dark" style="background-image: url(<?=$atts['img']['url']?>);">
 	<div class="container">
 		<div class="row justify-content-sm-end">
-			<div class="col-sm-9 col-md-7 col-lg-6">
+			<div class="col-sm-9 col-md-7 col-lg-7">
 				<div class="box-2">
 					<div class="wow-outer">
 						<div class="wow slideInUp">

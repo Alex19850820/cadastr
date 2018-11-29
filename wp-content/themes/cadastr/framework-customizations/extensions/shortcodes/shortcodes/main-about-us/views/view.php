@@ -13,7 +13,7 @@
 <section class="section section-lg" id="about-us">
 	<div class="container">
 		<div class="row row-50 justify-content-center justify-content-lg-between flex-lg-row-reverse">
-			<div class="col-lg-6 col-xl-5">
+			<div class="col-lg-7 col-xl-5">
 				<div class="inset-right-3">
 					<h3 class="wow-outer">
 						<span class="wow slideInDown">A Few Words About Us</span>
@@ -34,7 +34,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-6">
+			<div class="col-lg-7">
 				<div class="d3-chart-wrap wow fadeIn">
 					<div class="d3-chart" id="line-chart"></div>
 				</div>
