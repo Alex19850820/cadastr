@@ -22,9 +22,10 @@
 						<h4 class="box-light-title"><?=$advantage['h4']?></h4>
 						<p><?=$advantage['p']?></p>
 						<?php if($i == 1):?>
-							<button class="button button-primary button-winona button-small">
-								<?=$atts['button']?>
-							</button>
+<!--							<button class="button button-primary button-winona button-small">-->
+<!--								--><?//=$atts['button']?>
+<!--							</button>-->
+							<a class="button button-primary button-winona button-small" href="#make-appointment" data-toggle="modal"><?=$atts['button']?></a>
 						<?php endif;?>
 					</article>
 				</div>

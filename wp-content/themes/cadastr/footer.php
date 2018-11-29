@@ -103,7 +103,7 @@ $footer = fw_get_db_customizer_option();
 							</div>
 						</div>
 						<div class="col-12">
-							<button class="button button-primary button-winona" type="submit">Send</button>
+							<button class="button button-primary button-winona" type="submit">Отправить</button>
 						</div>
 					</div>
 				</form>
@@ -146,7 +146,7 @@ $footer = fw_get_db_customizer_option();
 <!--							</div>-->
 <!--						</div>-->
 						<div class="col-12">
-							<button class="button button-primary button-winona" type="submit">Send</button>
+							<button class="button button-primary button-winona" type="submit">Отправить</button>
 						</div>
 					</div>
 				</form>

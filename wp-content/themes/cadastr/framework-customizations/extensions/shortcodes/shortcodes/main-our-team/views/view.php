@@ -47,21 +47,21 @@
 					<p><?=$employee['text_modal']?></p>
 					<form id="send_employees" class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="<?php bloginfo('template_url')?>/includes/bat/rd-mailform.php">
 						<div class="row row-10">
+<!--							<div class="col-md-12">-->
+<!--								<div class="form-wrap">-->
+<!--									<label class="form-label-outside" for="contact-name">Name</label>-->
+<!--									<input class="form-input" type="text" name="name" data-constraints="@Required">-->
+<!--								</div>-->
+<!--							</div>-->
 							<div class="col-md-12">
 								<div class="form-wrap">
-									<label class="form-label-outside" for="contact-name">Name</label>
-									<input class="form-input" type="text" name="name" data-constraints="@Required">
-								</div>
-							</div>
-							<div class="col-md-12">
-								<div class="form-wrap">
-									<label class="form-label-outside" for="contact-phone">Phone</label>
+									<label class="form-label-outside" for="contact-phone">Телефон</label>
 									<input class="form-input" type="text" name="phone" data-constraints="@PhoneNumber">
 								</div>
 							</div>
 							<div class="col-12">
 								<button class="button button-primary button-winona" type="submit" data-form="send_employees">
-									Send
+									Отправить
 								</button>
 							</div>
 						</div>
