@@ -43,7 +43,7 @@
 						<span class="header__price-new"><?=$atts['new_price']?>₽</span>
 					</div>
 					<div class="wow-outer button-outer">
-						<a class="button button-primary button-winona button-small" href="#make-appointment" data-toggle="modal" >
+						<a class="button button-primary button-winona button-lg" href="#make-appointment" data-toggle="modal" >
 							<?=$atts['text_button']?>
 						</a>
 					</div>

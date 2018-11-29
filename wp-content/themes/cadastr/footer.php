@@ -51,7 +51,7 @@ $footer = fw_get_db_customizer_option();
 	</div>
 	<div class="container">
 		<div class="footer-standard-aside"><a class="brand" href="/">
-				<img src="<?php bloginfo('template_url')?>/assets/images/Logofuter.png" alt="Кадровый консалтинг" width="96" srcset="<?php bloginfo('template_url')?>/assets/images/logo-light-221x50.png 2x"/></a>
+				<img src="<?php bloginfo('template_url')?>/assets/images/Logofuter.png" alt="Кадровый консалтинг" width="120" srcset="<?php bloginfo('template_url')?>/assets/images/logo-light-221x50.png 2x"/></a>
 			<!-- Rights-->
 			<p class="rights">
 				<span>&copy;&nbsp;</span>

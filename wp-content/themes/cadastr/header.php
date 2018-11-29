@@ -41,7 +41,7 @@
 							</button>
 							<!-- RD Navbar Brand-->
 							<a class="rd-navbar-brand" href="/">
-								<img src="<?php bloginfo('template_url')?>/assets/images/Logo1.png" alt="Кадровый консалтинг" width="96" srcset="<?php bloginfo('template_url')?>/assets/images/Logo1.png 2x"/>
+								<img src="<?php bloginfo('template_url')?>/assets/images/Logo1.png" alt="Кадровый консалтинг" width="120" srcset="<?php bloginfo('template_url')?>/assets/images/Logo1.png 2x"/>
 							</a>
 						</div>
 						<div class="rd-navbar-main-element">
