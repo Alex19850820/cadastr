@@ -44,9 +44,19 @@ $options = [
 				'label' => __('Заголовок модалки', '{domain}'),
 			],
 			'text_modal'     => [
-				'type'  => 'textarea',
+//				'type'  => 'textarea',
+//				'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam, atque blanditiis cupiditate deserunt ex fuga id illum incidunt ipsa nam natus nulla possimus quae quisquam, sapiente sit soluta suscipit.',
+//				'label' => __('Текст модалки', '{domain}'),
+				'type'  => 'wp-editor',
 				'value' => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam, atque blanditiis cupiditate deserunt ex fuga id illum incidunt ipsa nam natus nulla possimus quae quisquam, sapiente sit soluta suscipit.',
-				'label' => __('Текст модалки', '{domain}'),
+				'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
+				'label' => __('Количество', '{domain}'),
+				'desc'  => __('Description', '{domain}'),
+				'help'  => __('Help tip', '{domain}'),
+				'size' => 'small', // small, large
+				'editor_height' => 400,
+				'wpautop' => true,
+				'editor_type' => false,
 			],
 		]
 	],
