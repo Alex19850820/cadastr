@@ -26,7 +26,7 @@ $footer = fw_get_db_customizer_option();
 						<h4><?=$footer['f_h4_2']?></h4>
 						<ul class="list-sm">
 							<li class="object-inline"><span class="icon icon-md mdi mdi-map-marker text-gray-700"></span><a class="link-default" href="#"><?=$footer['f_address']?></a></li>
-							<li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span><a class="link-default" href="tel:#"><?=$footer['f_phone']?></a></li>
+							<li class="object-inline"><span class="icon icon-md mdi mdi-phone text-gray-700"></span><a class="link-default" href="tel:<?=$footer['f_phone']?>"><?=$footer['f_phone']?></a></li>
 							<li class="object-inline"><span class="icon icon-md mdi mdi-email text-gray-700"></span><a class="link-default" href="mailto:#"><?=$footer['f_mail']?></a></li>
 						</ul>
 					</div>
