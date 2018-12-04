@@ -3,8 +3,7 @@ $(document).ready(function(){
 		$("#phone").mask("+99(999) 999-9999");
 	});
 });
-$(document).on('click', '.rd-nav-item', function (e) {
-	e.preventDefault();
+$(document).on('click', '.rd-nav-item', function () {
 	$('.rd-nav-item').removeClass('active');
 	$(this).addClass('active');
 });
