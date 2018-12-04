@@ -29,9 +29,20 @@ $options = [
 				'label' => __('Количество', '{domain}'),
 			],
 			'h5'     => [
-				'type'  => 'text',
+//				'type'  => 'text',
+//				'value' => 'International Awards',
+//				'label' => __('Количество', '{domain}'),
+				'type'  => 'wp-editor',
 				'value' => 'International Awards',
+				'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
 				'label' => __('Количество', '{domain}'),
+				'desc'  => __('Description', '{domain}'),
+				'help'  => __('Help tip', '{domain}'),
+				'size' => 'small', // small, large
+				'editor_height' => 400,
+				'wpautop' => true,
+				'editor_type' => false,
+				
 			],
 		],
 	]
